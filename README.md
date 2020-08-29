@@ -9,5 +9,7 @@ A huge help in this endevour was a freecodecamp tutorial where they walked me th
 
 *some concepts that where explored : Destructuring, event handlers, loops, if/else statements, API manipulation, CMS.
 
+in the future updates:
+ /payment method/side menu/ fresh re-design
 
 More is to come
