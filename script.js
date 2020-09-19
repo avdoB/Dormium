@@ -1,3 +1,4 @@
+
 //contentfull api
 const client = contentful.createClient({
   space: "c7x19peyonrx",
@@ -18,16 +19,15 @@ const client = contentful.createClient({
   const productsDOM = document.querySelector(".products-center");
   let cart = [];
   let buttonsDOM = [];
-  //syntactical sugar of writing constructor function
+
+
   
-  // products
+
   class Products {
     async getProducts() {
-      // always returns promise so we can add .then
-      // we can use await until promised is settled and return result
+     
       try {
-        // let result = await fetch("products.json");
-        // let data = await result.json();
+
         let contentful = await client.getEntries({
           content_type: "produkti"
         });
@@ -97,7 +97,7 @@ const client = contentful.createClient({
           // add to DOM
           this.setCartValues(cart);
           this.addCartItem(cartItem);
-          this.showCart();
+          
         });
       });
     }
@@ -155,7 +155,7 @@ const client = contentful.createClient({
       cartDOM.classList.remove("showCart");
     }
 
-    // calculating totals  and making buttons  functional
+ 
     cartLogic() {
       clearCartBtn.addEventListener("click", () => {
         this.clearCart();
@@ -165,7 +165,7 @@ const client = contentful.createClient({
           let removeItem = event.target;
           let id = removeItem.dataset.id;
           cartContent.removeChild(removeItem.parentElement.parentElement);
-          // remove item
+        
           this.removeItem(id);
         } else if (event.target.classList.contains("fa-chevron-up")) {
           let addAmount = event.target;
@@ -192,7 +192,7 @@ const client = contentful.createClient({
       });
     }
     clearCart() {
-      // console.log(this);
+    
       let cartItems = cart.map(item => item.id);
       cartItems.forEach(id => this.removeItem(id));
       while (cartContent.children.length > 0) {
