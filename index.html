@@ -8,12 +8,21 @@
     <title>Dormium</title>
 </head>
 <body data-gr-c-s-loaded="true">
+
     <nav class="navbar">
       <div class="navbar-center">
-        <span class="nav-icon">
-          <i class="fas fa-bars"></i>
-        </span>
-        <img src="https://i.ibb.co/cXmF03w/0001-1-removebg-preview.png" alt="">
+        <div class="left-menu">
+          <button class="menu-button"> 
+            <i class="fas fa-bars"></i>
+          </button>
+            <div class="drop">
+              <a href="">About</a>
+              <a href="">Contact</a>
+              <a href="">Services</a>
+            </div>
+  
+        </div>
+        <img src="./0001__1_-removebg-preview.png" alt="store logo">
         <div class="cart-btn">
           <span class="nav-icon">
             <i class="fas fa-cart-plus"></i>
@@ -22,35 +31,92 @@
         </div>
       </div>
     </nav>
+
     <header class="hero">
       <div class="banner">
         <h1 class="banner-title">Bedroom accessories</h1>
       <button  class="banner-btn">shop now</button>
       </div>
     </header>
+
     <section class="products">
       <div class="section-title">
-        <h2>Products</h2>
+        <h2><i class="fas fa-shopping-basket"></i>Products</h2>
       </div>
       <div class="products-center">
+ 
    </div>
     </section>
+
     <div class="cart-overlay">
       <div class="cart">
-        <span class="close-cart"><i class="far fa-window-close"></i></span>
+        <span class="close-cart"><i class="far fa-times-circle"></i></i></span>
         <h2>your cart</h2>
         <div class="cart-content">
+
         </div>
         <div class="cart-footer">
           <h3>your total : $<span class="cart-total">0</span></h3>
           <button class="clear-cart banner-btn">clear cart</button>
+          <button  class="check">Check out</button>
         </div>
       </div>
     </div>
+
+    <div class="content-slider">
+      <div class="slider">
+        <div class="mask"><i class="fab fa-twitter fa-2x"></i>
+          <ul>
+            <li class="anim1">
+              <div class="quote"><p>'Good night sleep is a Guarantee with Dormium'</p> </div>
+              <div class="source"><p>@Murat Hrnjic</p></div>
+            </li>
+            <li class="anim2">
+              <div class="quote"> <p>'My kids love Dormium, Thank you a lot.'</p> </div>
+              <div class="source"><p>@ Suzana Kramaric Latic</p></div>
+            </li>
+            <li class="anim3">
+              <div class="quote"> <p>'I never regreted buying dormium.'</p></div>
+              <div class="source"><p>@Andrej Savic</p> </div>
+            </li>
+            <li class="anim4">
+              <div class="quote"><p>'Dormium gives me the sleep i need.'</p> </div>
+              <div class="source"><p>@ Nihad Culah</p></div>
+            </li>
+            <li class="anim5">
+              <div class="quote"><p> 'Dormium gave me so much good night sleep'</p></div>
+              <div class="source"><p>@ Adnan Rosha </p></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <div class="footer">
-      <p>Dormium 2020</p>
+      <div class="block">
+        <div class="soc">
+          <p>Company</p>
+          <a href="">About</a>
+          <a href="">Help</a>
+          <a href="">Blog</a>
+        </div>
+        <div class="soc" >
+          <p>Follow Us</p>
+          <a href="">Instagram</a>
+          <a href="">Facebook</a>
+          <a href="">Twitter</a>
+        </div>
+        <div class="soc" >
+          <p>Legal</p>
+          <a href="">Privacy</a>
+          <a href="">Copyright</a>
+          <a href="">Terms</a>
+        </div>
+      </div>
+      <p id="comp"> © Dormium Company 2020</p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+
     <script src="script.js"></script>
   
 
